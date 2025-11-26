@@ -1,0 +1,12 @@
+---
+const { lang = 'en' } = Astro.props;
+import { t } from '../i18n';
+---
+<nav class="flex justify-between items-center p-4 bg-gray-800">
+    <a href="/">Pray-Time</a>
+    <ul class="flex gap-4">
+        <li><a href="#features" class="hover:text-blue">{t(lang, 'header.features')}</a></li>
+        <li><a href="#about" class="hover:text-blue">{t(lang, 'header.about')}</a></li>
+        <li><a href="#contact" class="hover:text-bluelight">{t(lang, 'header.contact')}</a></li>
+    </ul>
+</nav>
