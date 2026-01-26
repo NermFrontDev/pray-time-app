@@ -3,7 +3,28 @@ const { lang = 'en' } = Astro.props;
 import { t } from '../i18n';
 ---
 
-<section class="text-center p-8">
+<section>
+    <div class="flex columns-2 items-center justify-items-center">
+        <div class="w-1/2">
+            <div class="flex-col items-center">
+                <h1 class="text-blue-600/100 dark:text-sky-400 text-5xl font-bold w-96">Creada para ayudarte a pausar y orar</h1>
+                <p>
+                    Una herramienta sencilla y sin distracciones diseñada para ayduarte a recordar <br>
+                    tus momentos de oración y mantenerte conectado con Dios durante todo el día.
+                </p>
+            </div>
+        </div>
+        <div class="w-1/2">
+            <img src="src/images/content/celphone.png" alt="">   
+        </div>
+    </div>
+</section>
+
+<section class="text-center p-8 my-10">
     <h1 class="text-4xl font-bold">{t(lang, 'hero.title')}</h1>
     <p>{t(lang, 'hero.download')}</p>
+</section>
+
+<section>
+
 </section>
