@@ -4,27 +4,208 @@ import { t } from '../i18n';
 ---
 
 <section>
-    <div class="flex columns-2 items-center justify-items-center">
-        <div class="w-1/2">
-            <div class="flex-col items-center">
-                <h1 class="text-blue-600/100 dark:text-sky-400 text-5xl font-bold w-96">Creada para ayudarte a pausar y orar</h1>
-                <p>
-                    Una herramienta sencilla y sin distracciones diseñada para ayduarte a recordar <br>
-                    tus momentos de oración y mantenerte conectado con Dios durante todo el día.
-                </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 place-items-center p-4">
+        <!-- Columna 1 -->
+        <div>
+            <div class="bg-[#0C2433] p-3 rounded-full w-72 text-center text-[#00B4D8] font-bold mb-4">
+                Tu recordatorio diario para orar
+            </div>
+            <h1 class="text-[#00B4D8] text-5xl font-bold mb-2">Creada para ayudarte</h1>
+            <h1 class="text-[#00B4D8] text-5xl font-bold mb-4">a pausar y orar</h1>
+            <p class="text-lg">Una herramienta sencilla y sin distracciones diseñada para ayduarte a recordar</p>
+            <p class="text-lg">tus momentos de oración y mantenerte conectado con Dios durante todo el día.</p>
+            <div class="flex gap-4 justify-center mt-5 w-80">
+                <img src="src/images/content/google-play.png" alt="" class="w-1/2">
+                <img src="src/images/content/app-store.png" alt="" class="w-1/2">
+            </div>
+            <div class="flex gap-3 mt-3">
+                <img src="src/images/content/secure-svg.svg" alt="" class="w-4">
+                <p class="text-base">Sin registros, sin anuncios, sin seguimiento: solo recordatorios para hacer una pausa y orar.</p>
             </div>
         </div>
-        <div class="w-1/2">
-            <img src="src/images/content/celphone.png" alt="">   
+        <!-- Columna 2 -->
+        <div class="max-w-98">
+            <img src="src/images/content/celphone.png" alt="">
         </div>
     </div>
 </section>
 
-<section class="text-center p-8 my-10">
-    <h1 class="text-4xl font-bold">{t(lang, 'hero.title')}</h1>
-    <p>{t(lang, 'hero.download')}</p>
+<section>
+    <div class="px-8 lg:px-px">
+        <div class="text-center">
+            <h1 class="text-white text-5xl mb-4">Características Principales</h1>
+            <p>Diseñada para ayudarte a mantener una vida de oración constante y significativa</p>
+        </div>
+        <div class="flex flex-wrap gap-14 items-center justify-center sm:px-6 md:px-10 lg:px-20 xlg:px-40 mt-16">
+            <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
+                <img class="mb-2 w-10" src="src/images/content/clock.png" alt="">
+                <h5 class="mb-2 text-white text-xl font-semibold">
+                    Recordatorios de Oración
+                </h5>
+                <p class="text-white leading-normal font-light">
+                    Configura momentos específicos para pausar tu día y hablar con Dios.
+                </p>
+            </div>
+            <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
+                <img class="mb-2 w-10" src="src/images/content/cellphone.png" alt="">
+                <h5 class="mb-2 text-white text-xl font-semibold">
+                    Diseño Minimalista
+                </h5>
+                <p class="text-white leading-normal font-light">
+                    Una interfaz limpia que elimina distracciones para enfocarte en lo que realmente importa.
+                </p>
+            </div>
+            <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
+                <img class="mb-2 w-10" src="src/images/content/prohibido.png" alt="">
+                <h5 class="mb-2 text-white text-xl font-semibold">
+                    Sin registro, sin publicidad
+                </h5>
+                <p class="text-white leading-normal font-light">
+                    La app es completamente gratuita y no requiere crear cuentas cuentas, ni ver anuncios.
+                </p>
+            </div>
+            <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
+                <img class="mb-2 w-10" src="src/images/content/prohibido.png" alt="">
+                <h5 class="mb-2 text-white text-xl font-semibold">
+                    Sin registro, sin publicidad
+                </h5>
+                <p class="text-white leading-normal font-light">
+                    La app es completamente gratuita y no requiere crear cuentas cuentas, ni ver anuncios.
+                </p>
+            </div>
+            <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
+                <img class="mb-2 w-10" src="src/images/content/prohibido.png" alt="">
+                <h5 class="mb-2 text-white text-xl font-semibold">
+                    Sin registro, sin publicidad
+                </h5>
+                <p class="text-white leading-normal font-light">
+                    La app es completamente gratuita y no requiere crear cuentas cuentas, ni ver anuncios.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+            <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
+                <img class="mb-2 w-10" src="src/images/content/bell.png" alt="">
+                <h5 class="mb-2 text-white text-xl font-semibold">
+                    Notificaciones Insporadoras
+                </h5>
+                <p class="text-white leading-normal font-light">
+                    Recibe mensajes breves que te ayudan a mantener una vida de oración constante.
+                </p>
+            </div>
+            <div class="flex flex-col my-6 bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
+                <img class="mb-2 w-10" src="src/images/content/secure.png" alt="">
+                <h5 class="mb-2 text-white text-xl font-semibold">
+                    Privacidad Total
+                </h5>
+                <p class="text-white leading-normal font-light">
+                    No recopilamos ninguna información. Tus tiempos de oración, son totalmente gratuitos.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section>
-
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center p-8 md:p-20 lg:p-40">
+            <div class="img-pray">
+                <img class="" src="src/images/content/hands-pray.png" alt="">
+            </div>
+            <div class="mb-12">
+                <h1 class="text-white text-4xl font-bold mb-2">Una Herramienta</h1>
+                <h1 class="text-white text-4xl font-bold mb-4">para Tu Vida Espiritual</h1>
+                <p class="opacity-85">Pray-Time nació del deseo de crear una herramienta sencilla para quienes desean mantener una vida de oración consistente en medio de agendas ocupadas.
+                </p>
+                <p class="opacity-85">
+                    No busca reemplazar tu espiritualidad, sino ayudarte a recordar tus citas con Dios.
+                </p>
+                <div class="flex justify-start mt-5 w-80">
+                    <img class="" src="src/images/content/inciso.png" alt="">
+                    <h2 class="ml-2 font-semibold text-1x1">Diseño minimalista</h2>
+                    <p></p>
+                </div>
+                <p class="ml-8">
+                    Cada elemento está diseñado para acercarte más a Cristo y fortalecer tu fe cristiana.
+                </p>
+                <p class="ml-8">
+                    Ayudarte a pausar, respirar y orar.
+                </p>
+                <div class="flex justify-start mt-5 w-80">
+                    <img class="" src="src/images/content/inciso.png" alt="">
+                    <h2 class="ml-2 font-semibold text-1x1">Sin anuncios ni distracciones</h2>
+                </div>
+                <p class="ml-8">
+                    Tu tiempo de oración es sagrado. Por eso eliminamos todo lo que pueda interrumpir
+                </p>
+                <p class="ml-8">
+                    tu comunión con Dios.
+                </p>
+                <div class="flex justify-start mt-5 w-80">
+                    <img class="" src="src/images/content/inciso.png" alt="">
+                    <h2 class="ml-2 font-semibold text-1x1">Completamente gratuito</h2>
+                </div>
+                <p class="ml-8">
+                    Creemos que las herramientas espirituales deben estar disponibles para todos los
+                </p>
+                <p class="ml-8">
+                    creyentes sin costo alguno.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
+
+<section>
+    <div class="last-section grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center p-16">
+        <div>
+            <h2 class="text-white text-5xl font-bold mb-2">Comienza Tu Viaje de Oración Hoy</h2>
+            <p class="text-xl">
+                Descarga Pray-Time gratis y descubre cómo una vida de oración
+            </p>
+            <p class="text-xl">
+                organizada puede transformar tu relación con Dios.
+            </p>
+            <div class="flex gap-3 justify-start mt-2">
+                <img src="src/images/content/secure-svg.svg" alt="" class="mt-1">
+                <p class="mt-1 text-xl">Descarga segura • Sin registro • Privacidad garantizada</p>
+            </div>
+        </div>
+        <div class="flex gap-4 justify-center img-cta">
+            <img src="src/images/content/google-play.png" alt="" class="">
+            <img src="src/images/content/app-store.png" alt="" class="">
+        </div>
+    </div>
+</section>
+
+
+
+<style>
+.last-section{
+    background-image: url(src/images/content/bible.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: auto;
+    height: 600px;
+}
+
+.img-cta img{
+    width: 200px;
+    max-width: 100%;
+}
+
+.img-pray img{
+    width: 100%;
+    /* max-width: 100%; */
+}
+
+</style>
+
+
+
+<!-- <section class="text-center p-8 my-10">
+    <h1 class="text-4xl font-bold">{t(lang, 'hero.title')}</h1>
+    <p>{t(lang, 'hero.download')}</p>
+</section> -->
