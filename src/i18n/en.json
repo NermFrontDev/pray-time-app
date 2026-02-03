@@ -41,6 +41,14 @@
         "shield": "Secure download • No registration required • Privacy guaranteed"
     },
     "footer": {
-        "contact": "Contact"
+        "footer-slogan": "Your daily prayer companion for a lifetime of deeper Christian faith.",
+        "title-link1": "Links",
+        "link-feature1": "Features",
+        "link-feature2": "About",
+        "link-feature3": "Download",
+        "title-link2": "Contact",
+        "contact-desc": "Do you have questions or suggestions? We'd love to hear from you.",
+        "contact-link": "Contact Us",
+        "copyright": "Made with love for the Christian community."
     }
 }

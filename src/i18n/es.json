@@ -42,6 +42,14 @@
         "shield": "Descarga segura • Sin registro • Privacidad garantizada"
     },
     "footer": {
-        "contact": "Contact"
+        "footer-slogan": "Tu compañero de oración diario para una vida cristiana más profunda.",
+        "title-link1": "Enlaces",
+        "link-feature1": "Características",
+        "link-feature2": "Acerca de",
+        "link-feature3": "Descargar",
+        "title-link2": "Contacto",
+        "contact-desc": "¿Tienes preguntas o sugerencias? Nos encantaría escucharte.",
+        "contact-link": "Contáctanos",
+        "copyright": "Hecho con amor para la comunidad cristiana."
     }
 }

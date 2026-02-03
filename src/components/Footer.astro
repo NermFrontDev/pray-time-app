@@ -1,7 +1,34 @@
 ---
 const actualYear = new Date().getFullYear();
+const { lang = "en" } = Astro.props;
+import { t } from "../i18n";
 ---
 
-<footer class="text-center p-4 bg-gray-800">
-    <p>&copy; {actualYear} Pray-Time</p>
+<footer class="p-4 bg-gray-800 flex flex-row lg:flex-col justify-between items-center gap-6">
+    <div class="flex flex-col lg:flex-row w-full justify-around items-start gap-6 py-16">
+        <div class="flex flex-col items-start justify-items-center gap-2">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="#hero-banner">
+                <img src="src/assets/images/logo-image.png" alt="Logo" class="w-10 h-10 object-contain"/>
+                <span class="ml-3 text-xl">PrayTime</span>
+            </a>
+            <p class="w-72 text-gray-400">{ t(lang, 'footer.footer-slogan') }</p>
+        </div>
+        <div class="grid text-start gap-2">
+            <h3 class="text-3xl font-inter font-bold">{ t(lang, 'footer.title-link1') }</h3>
+            <div class="grid gap-3">
+                <a href="#features" class="font-medium text-gray-400 hover:text-gray-300">{ t(lang, 'footer.link-feature1') }</a>
+                <a href="#about" class="font-medium text-gray-400 hover:text-gray-300">{ t(lang, 'footer.link-feature2') }</a>
+                <a href="#download" class="font-medium text-gray-400 hover:text-gray-300">{ t(lang, 'footer.link-feature3') }</a>
+            </div>
+        </div>
+        <div class="grid text-start gap-2">
+            <h3 class="text-3xl font-inter font-bold">{ t(lang, 'footer.title-link2') }</h3>
+            <p class="w-72 text-gray-400">{ t(lang, 'footer.contact-desc') }</p>
+            <a href="mailto:contacto@praytime.com" class="border-t-gray-700 hover:bg-gray-700 text-gray-400 font-bold py-2 px-4 rounded w-1/2">{ t(lang, 'footer.contact-link') }</a>
+        </div>
+    </div>
+    <hr class="w-full border-gray-700 my-4" />
+    <div>
+        <p class="text-gray-400 text-center">&copy; {actualYear} Pray-Time. { t(lang, 'footer.copyright') }</p>
+    </div>
 </footer>
