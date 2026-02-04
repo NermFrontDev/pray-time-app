@@ -2,5 +2,9 @@
 const acceptLanguage = Astro.request.headers.get("accept-language") || "en";
 const lang = acceptLanguage.toLowerCase().startsWith("es") ? "es" : "en";
 
-return Astro.redirect(`/${lang}`);
+const Page = lang === "es"
+    ? (await import("./es/index.astro")).default
+    : (await import("./en/index.astro")).default;
 ---
+
+<Page lang={lang} />
