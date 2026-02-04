@@ -6,9 +6,33 @@ const { lang = 'en' } = Astro.props;
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Landing Page</title>
+        <title>PrayTime - Landing Page</title>
+        <meta name="description" content="PrayTime es una aplicación moderna y minimalista para ayudarte a pausar, orar y mantener una vida espiritual constante. Sin anuncios, sin registro y con privacidad total."/>
+        <!-- Open Graph Meta -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="PrayTime | Tu recordatorio diario para orar" />
+        <meta property="og:description" content="Una herramienta simple y sin distracciones diseñada para ayudarte a pausar y orar. Sin anuncios, sin seguimiento y completamente gratuita."/>
+        <meta property="og:image" content="/src/assets/images/og-image.jpg" />
+        <meta property="og:url" content="https://praytime.app" />
+        <meta property="og:site_name" content="PrayTime" />
+
+        <!-- Twitter Card Meta -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PrayTime | Pausa, ora y vuelve a lo importante" />
+        <meta name="twitter:description" content="Recordatorios de oración simples, privados y sin distracciones. Diseñada para ayudarte a mantener una vida espiritual constante."/>
+        <meta name="twitter:image" content="/src/assets/images/og-image.jpg" />
+
+        <meta name="keywords" content="oración, recordatorios de oración, app espiritual, vida espiritual, app cristiana, pray time, prayer app"/>
+
+
     </head>
     <body class="bg-gray-900 text-gray-100">
         <slot />
     </body>
 </html>
+
+<style>
+    html {
+        scroll-behavior: smooth !important;
+    }
+</style>

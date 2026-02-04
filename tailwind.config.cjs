@@ -3,7 +3,11 @@ module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,ts,tsx}'],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+    },
   },
   plugins: [require('@tailwindcss/forms')],
 };

@@ -2,10 +2,54 @@
     "header": {
         "features": "Características",
         "about": "Acerca de",
-        "contact": "Contacto"
+        "download": "Descargar"
     },
     "hero": {
+        "tagline": "Tu recordatorio diario para orar",
+        "title1": "Creada para ayudarte",
+        "title2": "a pausar y orar",
+        "description": "Una herramienta simple y sin distracciones diseñada para ayudarte a recordar tus momentos de oración y mantenerte conectado con Dios durante todo el día.",
+        "advice": "Sin registros, sin anuncios, sin seguimiento – solo recordatorios para detenerse y orar."
+    },
+    "features":{
+        "title": "Características Principales",
+        "subtitle": "Diseñada para ayudarte a mantener una vida de oración constante y significativa",
+        "card1-title": "Recordatorios de Oración",
+        "card1-desc": "Establece horarios específicos para detenerte y hablar con Dios.",
+        "card2-title": "Diseño Minimalista",
+        "card2-desc": "Una interfaz limpia que elimina distracciones para enfocarte en lo que realmente importa.",
+        "card3-title": "Sin registro, sin publicidad",
+        "card3-desc": "La app es completamente gratuita y no requiere crear cuentas cuentas, ni ver anuncios.",
+        "card4-title": "Notificaciones Inspiradoras",
+        "card4-desc": "Recibe mensajes breves que te ayudan a mantener una vida de oración constante.",
+        "card5-title": "Privacidad Total",
+        "card5-desc": "No recopilamos ninguna información. Tus tiempos de oración, son totalmente gratuitos."
+    },
+    "about": {
+        "title": "Una Herramienta para Tu Vida Espiritual",
+        "description1": "Pray-Time nació del deseo de crear una herramienta sencilla para quienes desean mantener una vida de oración consistente en medio de agendas ocupadas.",
+        "description2": "No busca reemplazar tu espiritualidad, sino ayudarte a recordar tus citas con Dios.",
+        "detail1-title": "Diseño Minimalista",
+        "detail1-desc": "Cada elemento está diseñado para acercarte a Cristo y fortalecer tu fe cristiana. Para ayudarte a pausar, respirar y orar.",
+        "detail2-title": "Sin anuncios ni distracciones",
+        "detail2-desc": "Tu tiempo de oración es sagrado. Por eso eliminamos cualquier cosa que pueda interrumpir tu comunión con Dios.",
+        "detail3-title": "Completamente gratuito",
+        "detail3-desc": "Creemos que las herramientas espirituales deben estar disponibles para todos los creyentes sin costo alguno."
+    },
+    "download": {
         "title": "Comienza Tu Viaje de Oración Hoy",
-        "download": "Descarga Pray-Time Gratis"
+        "description": "Descarga Pray-Time gratis y descubre cómo una vida de oración organizada puede transformar tu relación con Dios.",
+        "shield": "Descarga segura • Sin registro • Privacidad garantizada"
+    },
+    "footer": {
+        "footer-slogan": "Tu compañero de oración diario para una vida cristiana más profunda.",
+        "title-link1": "Enlaces",
+        "link-feature1": "Características",
+        "link-feature2": "Acerca de",
+        "link-feature3": "Descargar",
+        "title-link2": "Contacto",
+        "contact-desc": "¿Tienes preguntas o sugerencias? Nos encantaría escucharte.",
+        "contact-link": "Contáctanos",
+        "copyright": "Hecho con amor para la comunidad cristiana."
     }
 }

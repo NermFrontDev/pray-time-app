@@ -2,10 +2,53 @@
     "header": {
         "features": "Features",
         "about": "About",
-        "contact": "Contact"
+        "download": "Download"
     },
     "hero": {
-        "title": "Start Your Prayer Journey Today",
-        "download": "Download Pray-Time for Free"
+        "tagline": "Your daily reminder to pray",
+        "title1": "Created to help you",
+        "title2": "pause and pray",
+        "description": "A simple and distraction-free tool designed to help you remember your moments of prayer and stay connected with God throughout the day.",
+        "advice": "No sign-ups, no ads, no tracking – just reminders to pause and pray."
+    },
+    "features":{
+        "title": "Main Features",
+        "subtitle": "Designed to help you maintain a consistent and meaningful prayer life.",
+        "card1-title": "Prayer Reminders",
+        "card1-desc": "Set specific times to pause your day and talk to God.",
+        "card2-title": "Minimalist Design",
+        "card2-desc": "A clean interface that eliminates distractions for focus on what really matters.",
+        "card3-title": "No registration, no advertising",
+        "card3-desc": "The app is completely free and does not require create accounts or view ads.",
+        "card4-title": "Inspirational Notifications",
+        "card4-desc": "Receive short messages that help you maintain a life of constant prayer.",
+        "card5-title": "Total Privacy",
+        "card5-desc": "We do not collect any information. Your times of prayer are totally private."
+    },
+    "about": {
+        "title": "A Tool for Your Spiritual Life",
+        "description": "Pray-Time was born from the desire to create a simple tool for those who want to maintain a consistent prayer life amidst busy schedules. It doesn't seek to replace your spirituality, but rather to help you remember your appointments with God.",
+        "detail1-title": "Minimalist Design",
+        "detail1-desc": "Each element is designed to bring you closer to Christ and strengthen your Christian faith. To help you pause, breathe, and pray.",
+        "detail2-title": "No ads or distractions",
+        "detail2-desc": "Your prayer time is sacred. That's why we eliminate anything that could interrupt your communion with God.",
+        "detail3-title": "Completely free",
+        "detail3-desc": "We believe that spiritual tools should be available to all believers free of charge."
+    },
+    "download": {
+        "title": "Begin Your Prayer Journey Today",
+        "description": "Download Pray-Time for free and discover how an organized prayer life can transform your relationship with God.",
+        "shield": "Secure download • No registration required • Privacy guaranteed"
+    },
+    "footer": {
+        "footer-slogan": "Your daily prayer companion for a lifetime of deeper Christian faith.",
+        "title-link1": "Links",
+        "link-feature1": "Features",
+        "link-feature2": "About",
+        "link-feature3": "Download",
+        "title-link2": "Contact",
+        "contact-desc": "Do you have questions or suggestions? We'd love to hear from you.",
+        "contact-link": "Contact Us",
+        "copyright": "Made with love for the Christian community."
     }
 }

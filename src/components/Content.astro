@@ -1,9 +1,176 @@
 ---
 const { lang = 'en' } = Astro.props;
-import { t } from '../i18n';
+import "../styles/globals.css";
+import { t } from "../i18n";
 ---
 
-<section class="text-center p-8">
-    <h1 class="text-4xl font-bold">{t(lang, 'hero.title')}</h1>
-    <p>{t(lang, 'hero.download')}</p>
+<section id="hero-banner">
+    <div class="grid grid-cols-1 md:grid-cols-2 place-items-center p-4">
+        <!-- Columna 1 -->
+        <div>
+            <div class="bg-[#0C2433] p-3 rounded-full w-72 text-center text-[#00B4D8] font-bold mb-4">
+                { t(lang, 'hero.tagline') }
+            </div>
+            <h1 class="text-[#00B4D8] text-5xl font-bold mb-2">{ t(lang, 'hero.title1') }</h1>
+            <h1 class="text-[#00B4D8] text-5xl font-bold mb-4">{ t(lang, 'hero.title2') }</h1>
+            <p class="text-lg">{ t(lang, 'hero.description') }</p>
+            <div class="flex gap-4 justify-center mt-5 w-80">
+                <img src="src/images/content/google-play.png" alt="" class="w-1/2">
+                <img src="src/images/content/app-store.png" alt="" class="w-1/2">
+            </div>
+            <div class="flex gap-3 mt-3">
+                <img src="src/images/content/secure-svg.svg" alt="" class="w-4">
+                <p class="text-base">{ t(lang, 'hero.advice') }</p>
+            </div>
+        </div>
+        <!-- Columna 2 -->
+        <div class="max-w-98">
+            <img src="src/images/content/celphone.png" alt="">
+        </div>
+    </div>
 </section>
+
+<section id="features">
+    <div class="px-8 lg:px-px">
+        <div class="text-center">
+            <h1 class="text-white text-5xl mb-4 font-inter font-bold">{ t(lang, 'features.title') }</h1>
+            <p class="text-lg">{ t(lang, 'features.subtitle') }</p>
+        </div>
+        <div class="flex flex-wrap gap-14 items-center justify-center sm:px-6 md:px-10 lg:px-20 xlg:px-40 mt-16">
+            <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
+                <img class="mb-2 w-10" src="src/images/content/clock.png" alt="">
+                <h5 class="mb-2 text-white text-xl font-semibold">
+                    { t(lang, 'features.card1-title') }
+                </h5>
+                <p class="text-white leading-normal font-light">
+                    { t(lang, 'features.card1-desc') }
+                </p>
+            </div>
+            <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
+                <img class="mb-2 w-10" src="src/images/content/cellphone.png" alt="">
+                <h5 class="mb-2 text-white text-xl font-semibold">
+                    { t(lang, 'features.card2-title') }
+                </h5>
+                <p class="text-white leading-normal font-light">
+                    { t(lang, 'features.card2-desc') }
+                </p>
+            </div>
+            <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
+                <img class="mb-2 w-10" src="src/images/content/prohibido.png" alt="">
+                <h5 class="mb-2 text-white text-xl font-semibold">
+                    { t(lang, 'features.card3-title') }
+                </h5>
+                <p class="text-white leading-normal font-light">
+                    { t(lang, 'features.card3-desc') }
+                </p>
+            </div>
+            <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
+                <img class="mb-2 w-10" src="src/images/content/bell.png" alt="">
+                <h5 class="mb-2 text-white text-xl font-semibold">
+                    { t(lang, 'features.card4-title') }
+                </h5>
+                <p class="text-white leading-normal font-light">
+                    { t(lang, 'features.card4-desc') }
+                </p>
+            </div>
+            <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
+                <img class="mb-2 w-10" src="src/images/content/secure.png" alt="">
+                <h5 class="mb-2 text-white text-xl font-semibold">
+                    { t(lang, 'features.card5-title') }
+                </h5>
+                <p class="text-white leading-normal font-light">
+                    { t(lang, 'features.card5-desc') }
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about-praytime">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center p-8 md:p-20 lg:p-40">
+            <div class="img-pray">
+                <img class="" src="src/images/content/hands-pray.png" alt="">
+            </div>
+            <div class="grid gap-4">
+                <h1 class="text-white text-4xl font-bold mb-2">{ t(lang, 'about.title') }</h1>
+                <p class="opacity-85">{ t(lang, 'about.description') }</p>
+                </p>
+                <div class="grid gap-1">
+                    <div class="flex justify-start mt-5">
+                        <img class="text-1x1" src="src/images/content/inciso.png" alt="">
+                        <h2 class="ml-2 font-semibold text-2xl">{ t(lang, 'about.detail1-title') }</h2>
+                    </div>
+                    <p class="ml-8">
+                        { t(lang, 'about.detail1-desc') }
+                    </p>
+                </div>
+                <div class="grid gap-1">
+                    <div class="flex justify-start mt-5">
+                        <img class="text-1x1" src="src/images/content/inciso.png" alt="">
+                        <h2 class="ml-2 font-semibold text-2xl">{ t(lang, 'about.detail2-title') }</h2>
+                    </div>
+                    <p class="ml-8">
+                        { t(lang, 'about.detail2-desc') }
+                    </p>
+                </div>
+                <div class="grid gap-1">
+                    <div class="flex justify-start mt-5">
+                        <img class="text-1x1" src="src/images/content/inciso.png" alt="">
+                        <h2 class="ml-2 font-semibold text-2xl">{ t(lang, 'about.detail3-title') }</h2>
+                    </div>
+                    <p class="ml-8">
+                        { t(lang, 'about.detail3-desc') }
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="download">
+    <div class="last-section grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center p-16">
+        <div class="grid gap-2">
+            <h2 class="text-white text-5xl font-bold mb-2 w-98">{ t(lang, 'download.title') }</h2>
+            <p class="text-xl">
+                {t(lang, 'download.description')}
+            </p>
+            <div class="flex gap-3 justify-start mt-2">
+                <img src="src/images/content/secure-svg.svg" alt="" class="mt-1">
+                <p class="mt-1 text-xl">{ t(lang, 'download.shield') }</p>
+            </div>
+        </div>
+        <div class="flex gap-4 justify-center img-cta">
+            <a href="#" target="_blank">
+                <img src="src/images/content/google-play.png" alt="Download on Google Play" class="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="src/images/content/app-store.png" alt="Download on App Store" class="">
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<style>
+.last-section{
+    background-image: url(src/images/content/bible.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: auto;
+    height: 600px;
+}
+
+.img-cta img{
+    width: 200px;
+    max-width: 100%;
+}
+
+.img-pray img{
+    width: 100%;
+    /* max-width: 100%; */
+}
+
+</style>

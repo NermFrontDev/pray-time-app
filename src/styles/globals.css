@@ -2,6 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Inter Font */
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('/src/assets/fonts/Inter/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('/src/assets/fonts/Inter/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('/src/assets/fonts/Inter/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 html {
     @apply dark:bg-gray-900 dark:text-gray-100;
 }
+
+.last-section{
+    background-image: url(src/images/content/bible.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--BG-Gradient, linear-gradient(180deg, #0A0D1B 0%, #181D2C 90.25%));
+}
+
+#hero-banner {
+    padding-top: 5rem !important;
+}
+
+@media (max-width: 768px) {
+    #hero-banner {
+        padding-top: 7rem !important;
+    }
+}
+
