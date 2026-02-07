@@ -5,14 +5,14 @@ import { t } from "../i18n";
 ---
 
 <section id="hero-banner">
-    <div class="grid grid-cols-1 md:grid-cols-2 place-items-center p-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 place-items-center p-8 md:p-10">
         <!-- Columna 1 -->
-        <div>
+        <div class="grid gap-4">
             <div class="bg-[#0C2433] p-3 rounded-full w-72 text-center text-[#00B4D8] font-bold mb-4">
                 { t(lang, 'hero.tagline') }
             </div>
-            <h1 class="text-[#00B4D8] text-5xl font-bold mb-2">{ t(lang, 'hero.title1') }</h1>
-            <h1 class="text-[#00B4D8] text-5xl font-bold mb-4">{ t(lang, 'hero.title2') }</h1>
+            <h1 class="text-[#00B4D8] text-5xl font-bold mb-2 main-title">{ t(lang, 'hero.title1') }</h1>
+            <!-- <h1 class="text-[#00B4D8] text-5xl font-bold mb-4">{ t(lang, 'hero.title2') }</h1> -->
             <p class="text-lg">{ t(lang, 'hero.description') }</p>
             <div class="flex gap-4 justify-center mt-5 w-80">
                 <img src="/images/content/google-play.png" alt="" class="w-1/2">
@@ -97,7 +97,7 @@ import { t } from "../i18n";
                 </p>
                 <div class="grid gap-1">
                     <div class="flex justify-start mt-5">
-                        <img class="text-1x1" src="/images/content/inciso.png" alt="">
+                        <img class="text-1x1" src="/images/content/check.svg" alt="">
                         <h2 class="ml-2 font-semibold text-2xl">{ t(lang, 'about.detail1-title') }</h2>
                     </div>
                     <p class="ml-8">
@@ -106,7 +106,7 @@ import { t } from "../i18n";
                 </div>
                 <div class="grid gap-1">
                     <div class="flex justify-start mt-5">
-                        <img class="text-1x1" src="/images/content/inciso.png" alt="">
+                        <img class="text-1x1" src="/images/content/check.svg" alt="">
                         <h2 class="ml-2 font-semibold text-2xl">{ t(lang, 'about.detail2-title') }</h2>
                     </div>
                     <p class="ml-8">
@@ -115,7 +115,7 @@ import { t } from "../i18n";
                 </div>
                 <div class="grid gap-1">
                     <div class="flex justify-start mt-5">
-                        <img class="text-1x1" src="/images/content/inciso.png" alt="">
+                        <img class="text-1x1" src="/images/content/check.svg" alt="">
                         <h2 class="ml-2 font-semibold text-2xl">{ t(lang, 'about.detail3-title') }</h2>
                     </div>
                     <p class="ml-8">

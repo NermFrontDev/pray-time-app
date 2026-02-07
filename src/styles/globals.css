@@ -47,9 +47,16 @@ body {
     padding-top: 5rem !important;
 }
 
+.main-title{
+    width: 500px;
+
+}
+
 @media (max-width: 768px) {
     #hero-banner {
         padding-top: 7rem !important;
     }
+    .main-title {
+        width: 300px;
+    }
 }
-
