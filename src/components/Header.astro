@@ -1,6 +1,7 @@
 ---
 const { lang = "en" } = Astro.props;
 import { t } from "../i18n";
+import "../styles/globals.css";
 ---
 
 <header
@@ -11,7 +12,7 @@ import { t } from "../i18n";
         opacity: 0.95;
         width: 100%;
         z-index: 1000">
-  <div class="container mx-auto flex p-5 items-center">
+  <div class="container mx-auto flex p-5 items-center justify-between">
     <!-- Logo -->
     <a
       class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
@@ -24,25 +25,13 @@ import { t } from "../i18n";
       <span class="ml-3 text-xl">PrayTime</span>
     </a>
 
-    <!-- Botón hamburguesa -->
-    <button id="menu-toggle" class="ml-auto md:hidden">
-      <svg
-        class="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        viewBox="0 0 24 24">
-        <path d="M3 5h18M3 12h18M3 19h18"></path>
-      </svg>
-    </button>
-
     <!-- Menú desktop -->
     <nav class="hidden md:ml-auto md:mr-auto space-x-5 md:flex">
-      <a href="#features" class="mr-5 hover:text-white font-medium"
+      <a href="#features" class="navlink mr-5 hover:text-white font-medium"
         >{t(lang, "header.features")}</a>
-      <a href="#about-praytime" class="mr-5 hover:text-white font-medium"
+      <a href="#about-praytime" class="navlink mr-5 hover:text-white font-medium"
         >{t(lang, "header.about")}</a>
-      <a href="#download" class="mr-5 hover:text-white font-medium"
+      <a href="#download" class="navlink mr-5 hover:text-white font-medium"
         >{t(lang, "header.download")}</a>
     </nav>
 
@@ -58,12 +47,12 @@ import { t } from "../i18n";
           type="button" class="flex items-center gap-2 px-3 py-2 rounded-md bg-gray-900 hover:bg-gray-800 text-gray-300"
           aria-expanded="false">
           <!-- Icono translate -->
-          <span class="text-xl">
-            <img src="/assets/images/icons/translate_icon.svg" alt="Translate Icon" class="w-5 h-5" />
+          <span class="text-2xl">
+            <img src="/assets/images/icons/translate_icon.svg" alt="Translate Icon" class="w-8 md:w-5" />
           </span>
 
           <!-- Idioma actual -->
-          <span class="font-medium uppercase">{lang}</span>
+          <span class="text-lg md:text-lg font-inter uppercase">{lang}</span>
 
           <!-- Flecha -->
           <svg
@@ -83,14 +72,14 @@ import { t } from "../i18n";
           <li>
             <button
               data-lang="en"
-              class="w-full px-3 py-2 text-left text-gray-300 hover:bg-gray-800 uppercase">
+              class="font-inter font-medium w-full text-lg px-3 py-2 text-left text-gray-300 hover:bg-gray-800 uppercase">
               EN
             </button>
           </li>
           <li>
             <button
               data-lang="es"
-              class="w-full px-3 py-2 text-left text-gray-300 hover:bg-gray-800 uppercase">
+              class="font-inter font-medium w-full text-lg px-3 py-2 text-left text-gray-300 hover:bg-gray-800 uppercase">
               ES
             </button>
           </li>
@@ -100,6 +89,19 @@ import { t } from "../i18n";
         style="width: 2px; height: 30px; border: 1.5px solid #1E293B; border-radius: 100px;"
       >
       </div>
+
+      <!-- Botón hamburguesa -->
+      <button id="menu-toggle" class="md:hidden">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24">
+          <path d="M3 5h18M3 12h18M3 19h18"></path>
+        </svg>
+      </button>
+
       <div class="hidden md:flex items-center gap-4">
         <a
           href="https://www.facebook.com/profile.php?id=100068253095580"
@@ -130,13 +132,11 @@ import { t } from "../i18n";
   </div>
 
   <!-- Menú mobile -->
-  <nav
-    id="mobile-menu"
-    class="hidden md:hidden flex flex-col p-4 space-y-3 bg-gray-900"
-  >
-    <a class="mr-5 hover:text-white font-medium">Características</a>
-    <a class="mr-5 hover:text-white font-medium">Acerca de</a>
-    <a class="mr-5 hover:text-white font-medium">Descargar</a>
+  <nav id="mobile-menu" class="hidden md:hidden flex flex-col gap-8 p-8 space-y-3 bg-gray-900">
+    <hr>
+    <a href="#features" class="nav-link mr-5 hover:text-white font-inter text-2xl">{t(lang, "header.features")}</a>
+    <a href="#about-praytime" class="nav-link mr-5 hover:text-white font-inter text-2xl">{t(lang, "header.about")}</a>
+    <a href="#download" class="nav-link mr-5 hover:text-white font-inter text-2xl">{t(lang, "header.download")}</a>
   </nav>
 </header>
 
@@ -144,9 +144,16 @@ import { t } from "../i18n";
   // Toggle menú mobile
   const toggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("mobile-menu");
+  const navLinks = document.querySelectorAll(".nav-link");
 
   toggle?.addEventListener("click", () => {
     menu?.classList.toggle("hidden");
+  });
+  
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      menu?.classList.add("hidden");
+    });
   });
 
   // Dropdown idioma
@@ -171,4 +178,3 @@ import { t } from "../i18n";
     dropdown?.classList.add("hidden");
   });
 </script>
-

@@ -40,13 +40,17 @@ body {
 /* ============ HERO BANNER SECTION ============= */
 
 .last-section{
-    background-image: url(src/images/content/bible.png);
+    background-image: url(/images/content/bible.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     width: auto;
     height: 600px;
+}
+
+.content-herobanner {
+    width: min-content;
 }
 
 .img-cta img{
@@ -82,4 +86,12 @@ body {
     .main-title {
         width: 300px;
     }
+
+    .content-herobanner {
+        width: fit-content;
+    }
+}
+
+nav#mobile-menu {
+    height: 100vh;
 }
