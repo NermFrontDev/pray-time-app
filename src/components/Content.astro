@@ -5,27 +5,31 @@ import { t } from "../i18n";
 ---
 
 <section id="hero-banner">
-    <div class="grid grid-cols-1 md:grid-cols-2 place-items-center p-8 md:p-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 place-items-center p-5 md:p-10">
         <!-- Columna 1 -->
-        <div class="grid gap-4">
+        <div class="grid gap-4 content-herobanner">
             <div class="bg-[#0C2433] p-3 rounded-full w-72 text-center text-[#00B4D8] font-bold mb-4">
                 { t(lang, 'hero.tagline') }
             </div>
             <h1 class="text-[#00B4D8] text-5xl font-bold mb-2 main-title">{ t(lang, 'hero.title1') }</h1>
             <!-- <h1 class="text-[#00B4D8] text-5xl font-bold mb-4">{ t(lang, 'hero.title2') }</h1> -->
             <p class="text-lg">{ t(lang, 'hero.description') }</p>
-            <div class="flex gap-4 justify-center mt-5 w-80">
-                <img src="/images/content/very-soon.webp" alt="" class="w-1/2">
-                <img src="/images/content/app-store.webp" alt="" class="w-1/2">
+            <div class="flex gap-4 justify-start img-cta">
+                <a>
+                    <img src="/images/content/very-soon.webp" alt="Download on Google Play" class="PlayStore Icon">
+                </a>
+                <a href="https://apps.apple.com/us/app/pray-time-7/id6754796869" target="_blank">
+                    <img src="/images/content/app-store.webp" alt="AppStore Icon">
+                </a>
             </div>
             <div class="flex gap-3 mt-3">
-                <img src="/images/content/secure-svg.svg" alt="" class="w-4">
+                <img src="/images/content/secure-svg.svg" alt="Secure Icon" class="w-4">
                 <p class="text-base">{ t(lang, 'hero.advice') }</p>
             </div>
         </div>
         <!-- Columna 2 -->
         <div class="max-w-98">
-            <img src="/images/content/cellphone.webp" alt="">
+            <img src="/images/content/cellphone.webp" alt="Cellphone Image">
         </div>
     </div>
 </section>
@@ -36,9 +40,9 @@ import { t } from "../i18n";
             <h1 class="text-white text-5xl mb-4 font-inter font-bold">{ t(lang, 'features.title') }</h1>
             <p class="text-lg">{ t(lang, 'features.subtitle') }</p>
         </div>
-        <div class="flex flex-wrap gap-14 items-center justify-center sm:px-6 md:px-10 lg:px-20 xlg:px-40 mt-16">
+        <div class="flex flex-wrap gap-14 items-start justify-center sm:px-6 md:px-10 lg:px-20 xlg:px-40 mt-16">
             <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
-                <img class="mb-2 w-10" src="/images/content/clock.png" alt="">
+                <img class="mb-2 w-10" src="/images/content/clock.svg" alt="Clock Icon">
                 <h5 class="mb-2 text-white text-xl font-semibold">
                     { t(lang, 'features.card1-title') }
                 </h5>
@@ -47,7 +51,7 @@ import { t } from "../i18n";
                 </p>
             </div>
             <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
-                <img class="mb-2 w-10" src="/images/content/phone.svg" alt="">
+                <img class="mb-2 w-10" src="/images/content/phone.svg" alt="Phone Icon">
                 <h5 class="mb-2 text-white text-xl font-semibold">
                     { t(lang, 'features.card2-title') }
                 </h5>
@@ -56,7 +60,7 @@ import { t } from "../i18n";
                 </p>
             </div>
             <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
-                <img class="mb-2 w-10" src="/images/content/not.svg" alt="">
+                <img class="mb-2 w-10" src="/images/content/not.svg" alt="Notification Icon">
                 <h5 class="mb-2 text-white text-xl font-semibold">
                     { t(lang, 'features.card3-title') }
                 </h5>
@@ -65,7 +69,7 @@ import { t } from "../i18n";
                 </p>
             </div>
             <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
-                <img class="mb-2 w-10" src="/images/content/bell.svg" alt="">
+                <img class="mb-2 w-10" src="/images/content/bell.svg" alt="Bell Icon">
                 <h5 class="mb-2 text-white text-xl font-semibold">
                     { t(lang, 'features.card4-title') }
                 </h5>
@@ -74,7 +78,7 @@ import { t } from "../i18n";
                 </p>
             </div>
             <div class="flex flex-col bg-[#151B2B] shadow-sm border border-[#151B2B] hover:border-[#00B4D8] hover:shadow-md rounded-lg transition-all cursor-pointer sm:w-30 md:w-96 p-6">
-                <img class="mb-2 w-10" src="/images/content/privacy.svg" alt="">
+                <img class="mb-2 w-10" src="/images/content/privacy.svg" alt="Privacy Icon">
                 <h5 class="mb-2 text-white text-xl font-semibold">
                     { t(lang, 'features.card5-title') }
                 </h5>
@@ -93,7 +97,7 @@ import { t } from "../i18n";
             </div>
             <div class="grid gap-4">
                 <h1 class="text-white text-4xl font-bold mb-2">{ t(lang, 'about.title') }</h1>
-                <p class="opacity-85">{ t(lang, 'about.description') }</p>
+                <p class="opacity-85 text-xl">{ t(lang, 'about.description') }</p>
                 </p>
                 <div class="grid gap-1">
                     <div class="flex justify-start mt-5">
@@ -128,23 +132,23 @@ import { t } from "../i18n";
 </section>
 
 <section id="download">
-    <div class="last-section grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center p-16">
+    <div class="last-section grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center p-8 md:p-16">
         <div class="grid gap-2">
-            <h2 class="text-white text-5xl font-bold mb-2 w-98">{ t(lang, 'download.title') }</h2>
+            <h2 class="text-white text-4xl md:text-5xl font-bold mb-2 w-98">{ t(lang, 'download.title') }</h2>
             <p class="text-xl">
                 {t(lang, 'download.description')}
             </p>
             <div class="flex gap-3 justify-start mt-2">
-                <img src="/images/content/secure-svg.svg" alt="" class="mt-1">
+                <img src="/images/content/secure-svg.svg" alt="Secure Icon" class="mt-1">
                 <p class="mt-1 text-xl">{ t(lang, 'download.shield') }</p>
             </div>
         </div>
         <div class="flex gap-4 justify-center img-cta">
             <a>
-                <img src="/images/content/very-soon.webp" alt="Download on Google Play" class="">
+                <img src="/images/content/very-soon.webp" alt="Download on Google Play" class="PlayStore Icon">
             </a>
             <a href="https://apps.apple.com/us/app/pray-time-7/id6754796869" target="_blank">
-                <img src="/images/content/app-store.webp" alt="Download on App Store" class="">
+                <img src="/images/content/app-store.webp" alt="AppStore Icon">
             </a>
         </div>
     </div>
