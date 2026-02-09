@@ -5,16 +5,15 @@ import { t } from "../i18n";
 ---
 
 <section id="hero-banner">
-    <div class="grid grid-cols-1 md:grid-cols-2 place-items-center p-5 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center p-5 md:p-10">
         <!-- Columna 1 -->
-        <div class="grid gap-4 content-herobanner">
-            <div class="bg-[#0C2433] p-3 rounded-full w-72 text-center text-[#00B4D8] font-bold mb-4">
+        <div class="grid gap-6 md:gap-4 content-herobanner">
+            <div class="bg-tagline p-3 rounded-full w-72 text-center font-bold mb-4">
                 { t(lang, 'hero.tagline') }
             </div>
-            <h1 class="text-[#00B4D8] text-5xl font-bold mb-2 main-title">{ t(lang, 'hero.title1') }</h1>
-            <!-- <h1 class="text-[#00B4D8] text-5xl font-bold mb-4">{ t(lang, 'hero.title2') }</h1> -->
+            <h1 class="text-5xl font-bold mb-2 main-title">{ t(lang, 'hero.title1') }</h1>
             <p class="text-lg">{ t(lang, 'hero.description') }</p>
-            <div class="flex gap-4 justify-start img-cta">
+            <div class="flex gap-6 md:gap-5 justify-center md:justify-start img-cta">
                 <a>
                     <img src="/images/content/very-soon.webp" alt="Download on Google Play" class="PlayStore Icon">
                 </a>
@@ -34,7 +33,7 @@ import { t } from "../i18n";
     </div>
 </section>
 
-<section id="features">
+<section id="features" class="py-16 md:mt-16">
     <div class="px-8 lg:px-px">
         <div class="text-center">
             <h1 class="text-white text-5xl mb-4 font-inter font-bold">{ t(lang, 'features.title') }</h1>
@@ -90,39 +89,39 @@ import { t } from "../i18n";
     </div>
 </section>
 
-<section id="about-praytime">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center p-8 md:p-20 lg:p-40">
+<section id="about-praytime" class="py-16 md:py-0">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center p-8 md:p-20">
             <div class="img-pray">
-                <img class="" src="/images/content/hands-pray.webp" alt="">
+                <img class="" src="/images/content/hands-pray.webp" alt="About Pray Time Image">
             </div>
             <div class="grid gap-4">
                 <h1 class="text-white text-4xl font-bold mb-2">{ t(lang, 'about.title') }</h1>
-                <p class="opacity-85 text-xl">{ t(lang, 'about.description') }</p>
+                <p class="opacity-85 text-lg about-desc">{ t(lang, 'about.description') }</p>
                 </p>
                 <div class="grid gap-1">
                     <div class="flex justify-start mt-5">
-                        <img class="text-1x1" src="/images/content/check.svg" alt="">
+                        <img class="text-1x1" src="/images/content/check.svg" alt="Item Check Icon">
                         <h2 class="ml-2 font-semibold text-2xl">{ t(lang, 'about.detail1-title') }</h2>
                     </div>
-                    <p class="ml-8">
+                    <p class="ml-8 item-about-desc">
                         { t(lang, 'about.detail1-desc') }
                     </p>
                 </div>
                 <div class="grid gap-1">
                     <div class="flex justify-start mt-5">
-                        <img class="text-1x1" src="/images/content/check.svg" alt="">
+                        <img class="text-1x1" src="/images/content/check.svg" alt="Item Check Icon">
                         <h2 class="ml-2 font-semibold text-2xl">{ t(lang, 'about.detail2-title') }</h2>
                     </div>
-                    <p class="ml-8">
+                    <p class="ml-8 item-about-desc">
                         { t(lang, 'about.detail2-desc') }
                     </p>
                 </div>
                 <div class="grid gap-1">
                     <div class="flex justify-start mt-5">
-                        <img class="text-1x1" src="/images/content/check.svg" alt="">
+                        <img class="text-1x1" src="/images/content/check.svg" alt="Item Check Icon">
                         <h2 class="ml-2 font-semibold text-2xl">{ t(lang, 'about.detail3-title') }</h2>
                     </div>
-                    <p class="ml-8">
+                    <p class="ml-8 item-about-desc">
                         { t(lang, 'about.detail3-desc') }
                     </p>
                 </div>
@@ -132,18 +131,18 @@ import { t } from "../i18n";
 </section>
 
 <section id="download">
-    <div class="last-section grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center p-8 md:p-16">
-        <div class="grid gap-2">
-            <h2 class="text-white text-4xl md:text-5xl font-bold mb-2 w-98">{ t(lang, 'download.title') }</h2>
+    <div class="last-section grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center p-8 md:p-16">
+        <div class="grid gap-2 content-cta">
+            <h2 class="text-white text-4xl md:text-5xl font-bold mb-2 cta-title">{ t(lang, 'download.title') }</h2>
             <p class="text-xl">
                 {t(lang, 'download.description')}
             </p>
             <div class="flex gap-3 justify-start mt-2">
                 <img src="/images/content/secure-svg.svg" alt="Secure Icon" class="mt-1">
-                <p class="mt-1 text-xl">{ t(lang, 'download.shield') }</p>
+                <p class="mt-1 text-lg">{ t(lang, 'download.shield') }</p>
             </div>
         </div>
-        <div class="flex gap-4 justify-center img-cta">
+        <div class="flex gap-6 justify-center img-cta">
             <a>
                 <img src="/images/content/very-soon.webp" alt="Download on Google Play" class="PlayStore Icon">
             </a>
